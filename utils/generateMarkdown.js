@@ -23,8 +23,40 @@ function generateLicenseBadge(license) {
 
 // function to generate markdown for README
 function generateMarkdown(data) {
+  console.log(data);
   return `# ${data.title}
   ${generateLicenseBadge(data.license)}
+
+  ## Description
+  ${data.description}
+  
+  ## Table of Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
+  
+  ## Installation
+  ${data.installation}
+  
+  ## Usage
+  ${data.usage}
+  
+  ## License
+  ${data.license}
+  
+  ## Contributing
+  ${data.contributing}
+  
+  ## Tests
+  ${data.tests}
+  
+  ## Questions
+  For any questions about this project, contact ${data.email}. You can find more information and other projects on my [GitHub profile](https://github.com/${data.github}).
+
+
 `;
 }
 
