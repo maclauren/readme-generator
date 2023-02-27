@@ -33,7 +33,7 @@ inquirer
         type: 'list',
         message: 'Choose a license for your project:',
         name: 'license',
-        choices: ['MIT', 'GNU GPL v3', 'Apache 2.0', 'ISC'],
+        choices: ['MIT', 'GNU GPL v3', 'Apache 2.0', 'ISC', 'Unlicensed'],
       },
       {
         type: 'input',

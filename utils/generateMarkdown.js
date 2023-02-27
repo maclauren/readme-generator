@@ -1,7 +1,7 @@
 // function to generate license badge for README
 function generateLicenseBadge(license) {
   if (license !== "None"){
-    return `![Github license] (https://img.shields.io/badge/license-${license}-blue.svg)`
+    return `![Github license](https://img.shields.io/badge/license-${license}-blue.svg)`
   }
   return ''
   // const licenseName = data.license[0];
@@ -20,6 +20,13 @@ function generateLicenseBadge(license) {
   //   };
   // return licenseCode
   };
+
+  const generateLicenseLink = (license) => {
+    if(license !== "Unlicensed") {
+      return `\n* [License] (#license)\n`
+    }
+    return '';
+  }
 
 // function to generate markdown for README
 function generateMarkdown(data) {
@@ -45,7 +52,8 @@ function generateMarkdown(data) {
   ${data.usage}
   
   ## License
-  ${data.license}
+  ${generateLicenseLink(data.license)}
+
   
   ## Contributing
   ${data.contributing}
