@@ -1,6 +1,6 @@
 // function to generate license badge for README
 function generateLicenseBadge(data) {
-  if (licenseName = data.license[0]);
+  const licenseName = data.license[0];
   let licenseCode = " "
   if (licenseName === "MIT") {
     licenseCode = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
