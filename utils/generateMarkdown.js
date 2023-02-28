@@ -1,4 +1,5 @@
 // function to generate license badge for README
+// fyi i received tutor help to fix my first attempt which is commented out below
 function generateLicenseBadge(license) {
   if (license !== "None"){
     return `![Github license](https://img.shields.io/badge/license-${license}-blue.svg)`
@@ -40,7 +41,6 @@ function generateMarkdown(data) {
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
-  - [License](#license)
   - [Contributing](#contributing)
   - [Tests](#tests)
   - [Questions](#questions)
@@ -50,10 +50,6 @@ function generateMarkdown(data) {
   
   ## Usage
   ${data.usage}
-  
-  ## License
-  ${generateLicenseLink(data.license)}
-
   
   ## Contributing
   ${data.contributing}
